@@ -14,3 +14,4 @@ Countdown & Google Calendar
 MySQL
 Node.js
 Express
+and other new technologies. 
