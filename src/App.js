@@ -1,11 +1,14 @@
-// import logo from './logo.svg';
-// import './App.css';
-
 import React from "react";
 import HelloDiv from "./components/Div";
+import Header from "./components/Header";
+
 
 function App() {
-  return <HelloDiv />;
+  return (
+    <div className="App">
+      <Header />
+      <HelloDiv />
+    </div>
+  );
 }
-
 export default App;
