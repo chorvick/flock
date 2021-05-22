@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Login } from "../pages/Pages";
 import './Header.css';
 
 
@@ -8,14 +10,14 @@ function NavBar() {
     <div>
       <nav className="no-shadows">
         <div className="nav-wrapper">
-          <a href="/" data-target="mobile-demo" className="sidenav-trigger"><i className="fas fa-bars"></i></a>
+          <Link to="/" data-target="mobile-demo" className="sidenav-trigger"><i className="fas fa-bars"></i></Link>
           <nav>
             <div className="nav-wrapper">
-              <a href="landing.html" className="brand-logo">Flock</a>
+              <Link to="/" className="brand-logo">Flock</Link>
               <ul className="right hide-on-med-and-down">
-                <li><a href="about.html">Home</a></li>
-                <li><a href="contact.html">Sign In</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/Signup">Sign in</Link></li>
+              <li><Link to="/Login">Log in</Link></li>
               </ul>
             </div>
           </nav>
