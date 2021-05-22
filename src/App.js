@@ -4,14 +4,33 @@ import HomePage from "./components/HomePage";
 
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <HomePage />
-      <Login />
-      <Signup />
+      <React.Fragment>
+        <Router>
+          <NavBar />
+        </Router>
+      </React.Fragment>
+      <Router>
+        <Switch>
+          <Route path="/Login">
+            <Login />
+          </Route>
+          <Route path="/Signup">
+            <Signup />
+          </Route>
+          <Route path="/HomePage">
+            <HomePage />
+          </Route>
+        </Switch>
+      </Router>
+
     </div>
   );
 }
