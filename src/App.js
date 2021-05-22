@@ -1,13 +1,17 @@
 import React from "react";
-import HelloDiv from "./components/Div";
-import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+import HomePage from "./components/HomePage";
 
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <HelloDiv />
+      <NavBar />
+      <HomePage />
+      <Login />
+      <Signup />
     </div>
   );
 }
