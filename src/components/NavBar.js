@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Login } from "../pages/Pages";
 import "./Header.css";
 
 function NavBar() {
@@ -6,26 +8,26 @@ function NavBar() {
     <div>
       <nav className="no-shadows">
         <div className="nav-wrapper">
-          <a href="/" data-target="mobile-demo" className="sidenav-trigger">
+          <Link to="/" data-target="mobile-demo" className="sidenav-trigger">
             <i className="fas fa-bars"></i>
-          </a>
+          </Link>
           <nav>
             <div className="nav-wrapper">
-              <a href="landing.html" className="brand-logo">
+              <Link to="/" className="brand-logo">
                 Flock
-              </a>
+              </Link>
               <ul className="right hide-on-med-and-down">
                 <li>
-                  <a href="home.html">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="about.html">About</a>
+                  <Link to="/Signup">Sign in</Link>
                 </li>
                 <li>
-                  <a href="contact.html">Sign In</a>
+                  <Link to="/Login">Log in</Link>
                 </li>
                 <li>
-                  <a href="signup.html">Sign Up</a>
+                  <Link to="/AboutPage">About</Link>
                 </li>
               </ul>
             </div>
