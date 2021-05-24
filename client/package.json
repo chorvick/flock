@@ -9,7 +9,6 @@
     "axios": "^0.21.1",
     "bootstrap": "^5.0.1",
     "express": "^4.17.1",
-    "express-session": "^1.17.2",
     "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.12.10",
     "morgan": "^1.10.0",
