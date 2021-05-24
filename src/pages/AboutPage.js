@@ -109,7 +109,7 @@ const AboutPage = () => {
           </button>
           <h1>ABOUT</h1>
           <div className="row">
-            <div className="col s4" id="ShannonPic">
+            <div className="col s4" id="ShannonPic" onClick={showShannonAbout}>
               <input
                 type="image"
                 id="Shan"
@@ -120,7 +120,7 @@ const AboutPage = () => {
                 alt="unknown"
               />
             </div>
-            <div className="col s4" id="BrianPic">
+            <div className="col s4" id="BrianPic" onClick={showBrianAbout}>
               <input
                 type="image"
                 id="Brian"
@@ -131,7 +131,7 @@ const AboutPage = () => {
                 alt="unknown"
               />
             </div>
-            <div className="col s4" id="CliffPic">
+            <div className="col s4" id="CliffPic" onClick={showCliffAbout}>
               <input
                 type="image"
                 id="Cliff"
@@ -142,7 +142,11 @@ const AboutPage = () => {
                 alt="unknown"
               />
             </div>
-            <div className="col s12" id="MohammadPic">
+            <div
+              className="col s12"
+              id="MohammadPic"
+              onClick={showMohammadAbout}
+            >
               <input
                 type="image"
                 id="Mohammad"
