@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Login } from "../pages/Pages";
 import "./Header.css";
 
+
 function NavBar() {
   return (
     <div>
