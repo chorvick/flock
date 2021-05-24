@@ -1,16 +1,17 @@
-# Flock
-
-This application will allow users to implement a get together platform for friends. The application has these features: (see below for more detailed project plan)
-Login authentication 
-Countdown for the get together
+# wonderlust
+This application will allow users to implement a travelling plan with friends. The application has these features: (see below for more detailed project plan)
+login authentication 
+Google maps to view the area and locations
+Calendar feature that allows user to find overlapping time with their friends
+Countdown for the trip
 Why is it valuable? 
-Having collaborative efforts to schedule meetups with your friends. Having this application will be a solution to this difficulty and create more convenience ! It allows friends to schedule a time to meet together and get weather updates about the 
+Having collaborative efforts to schedule a trip with your friends can be hard. Having this application will be a solution to this difficulty and create more convenience.
 Technologies Used
-React
-Materialize(NEW) & Bootstrap & Animate.CSS(NEW) 
-APIS: weather Countdown(NEW) 
-Twilio(NEW)
+ React
+Materialize & Bootstrap
+APIS: weather, geolocation
+Countdown & Google Calendar
 MySQL
 Node.js
 Express
-Handlebars
+and other new technologies. 
