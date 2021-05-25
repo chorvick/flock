@@ -107,7 +107,7 @@ const AboutPage = () => {
           <button class="hide btn" id="meetTeamBtn" onClick={GangsAllHere}>
             BACK
           </button>
-          <h1>ABOUT</h1>
+          <h1></h1>
           <div className="row">
             <div className="col s4" id="ShannonPic" onClick={showShannonAbout}>
               <input
