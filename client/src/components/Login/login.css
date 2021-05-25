@@ -1,0 +1,21 @@
+#container {
+    margin: 20px;
+    width: 400px;
+    height: 8px;
+    position: relative;
+  }
+
+.login {
+    margin-top: 200px;
+}
+  .log {
+        background-image: url(login.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        text-align: right;
+    }

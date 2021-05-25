@@ -1,27 +1,28 @@
 import React from "react";
+import "../components/SignUp/signup.css"
 
 
 function Signup() {
   return (
-    <main>
-        <div className="container center-align">
+    <main class="sign">
+        <div className="container center-align, signup">
             <div className="row left-align">
-                <h3>Sign Up</h3>
-                <form className=" col s12 form signup-form">
+                <h3>Let's Be Friends!</h3>
+                <form className=" col s6 form signup-form">
                     <div className="form-group left-align">
-                        <label for="last-signup">first name:</label>
+                        <label for="last-signup">FIRST NAME</label>
                         <input className="form-input" type="text" id="first-signup" />
                     </div>
                     <div className="form-group left-align">
-                        <label for="first-signup">last name:</label>
+                        <label for="first-signup">LAST NAME</label>
                         <input className="form-input" type="text" id="last-signup" />
                     </div>
                     <div className="form-group left-align">
-                        <label for="username-signup">username:</label>
+                        <label for="username-signup">USERNAME</label>
                         <input className="form-input" type="text" id="username-signup" />
                     </div>
                     <div className="form-group left-align">
-                        <label for="password-signup">password:</label>
+                        <label for="password-signup">PASSWORD</label>
                         <input className="form-input" type="password" id="password-signup" />
                     </div>
                     <div className="form-group left-align">
