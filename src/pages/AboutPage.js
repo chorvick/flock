@@ -1,9 +1,11 @@
 import React from "react";
-import shannon from "../images/Shannon.jpg";
-import moh from "../images/Mohammad.jpg";
-import cliff from "../images/Cliff.jpg";
-import brian from "../images/Brian.jpg";
+import shannon from "../components/About/images/Shannon.jpg";
+import moh from "../components/About/images/Mohammad.jpg";
+import cliff from "../components/About/images/Cliff.jpg";
+import brian from "../components/About/images/Brian.jpg";
 import $ from "jquery";
+
+
 
 function showShannonAbout() {
   $("#ShannonAbout").removeClass("hide");
@@ -107,7 +109,7 @@ const AboutPage = () => {
           <button class="hide btn" id="meetTeamBtn" onClick={GangsAllHere}>
             BACK
           </button>
-          <h1></h1>
+          <h1>Meet the Team</h1>
           <div className="row">
             <div className="col s4" id="ShannonPic" onClick={showShannonAbout}>
               <input

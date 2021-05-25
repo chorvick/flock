@@ -1,13 +1,14 @@
 import React from "react";
+import "../components/SignUp/signup.css"
 
 
 function Signup() {
   return (
-    <main>
-        <div className="container center-align">
+    <main class="sign">
+        <div className="container center-align, signup">
             <div className="row left-align">
                 <h3>Let's Be Friends!</h3>
-                <form className=" col s12 form signup-form">
+                <form className=" col s6 form signup-form">
                     <div className="form-group left-align">
                         <label for="last-signup">FIRST NAME</label>
                         <input className="form-input" type="text" id="first-signup" />
