@@ -11,6 +11,7 @@
     "connect-mongo": "^4.4.1",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
+    "jquery": "^3.6.0",
     "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.12.10",
     "morgan": "^1.10.0",
@@ -47,5 +48,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This application will allow users to implement a get together platform for friends. The application has these features: (see below for more detailed project plan) Login authentication  Countdown for the get together Why is it valuable?  Having collaborative efforts to schedule meetups with your friends. Having this application will be a solution to this difficulty and create more convenience ! It allows friends to schedule a time to meet together and get weather updates about the  Technologies Used React Materialize(NEW) & Bootstrap & Animate.CSS(NEW)  APIS: weather Countdown(NEW)  Twilio(NEW) MySQL Node.js Express Handlebars",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
