@@ -27,6 +27,10 @@ var UsersSchema = new Schema({
         type: String,
         required: true
     },
+    phone: {
+        type: String,
+        required: false
+    },
 
     events: [{
         type: Schema.Types.ObjectId,
