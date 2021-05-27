@@ -34,13 +34,13 @@ var EventSchema = new Schema({
     /// the organizer is the 'boss' of the event, having some measure of control, can cancel event ect... make changes
     organizer: {
         type: String,
-        required: true
+        required: false
     },
     //// to reference
     organizerId: {
         type: Schema.Types.ObjectId,
         ref: "Users",
-        required: true,
+        required: false,
     },
     //// those attending the outing
     attendees: [{
