@@ -1,17 +1,15 @@
 const router = require("express").Router();
-const db = require("../model/index");
-
+const {Events} = require("../model");
+const passport = require("../passport");
+const mongojs = require("mongojs");
 
 ///pull all events 
 
 
 router.get("/event", function (req, res) {
-    db.Events.find({}).then((response) => {
-        console.log(response);
-        console.log("event listing");
-
-    });
-
+    Events.find({})
+    .then((response) => console.log(response))
+        // .then((response) => res.json(response))
 });
 
 

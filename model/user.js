@@ -1,6 +1,6 @@
 ////set up database and encryption specifics ---------------------------------MORE MAGIC 
 var mongoose = require("mongoose");
-const bcrypt = require('bcryptjs');
+// const bcrypt = require('bcryptjs');
 
 // Save a reference to the Schema constructor
 var Schema = mongoose.Schema;
