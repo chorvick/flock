@@ -12,10 +12,9 @@
     
     
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
-    
-    
-  }
-  },
+     },
+  
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chorvick/flock.git"
@@ -38,3 +37,4 @@
     "passport": "^0.4.1"
   }
 }
+
