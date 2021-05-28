@@ -29,3 +29,5 @@ app.use(require("./routes"))
 app.listen(PORT, function () {
     console.log(`Server now listening on PORT ${PORT}!`);
 });
+
+/////    server js file runs the express server
