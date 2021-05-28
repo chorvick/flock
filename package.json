@@ -8,9 +8,13 @@
     "start:server": "node server.js",
     "start:dev:server": "nodemon server.js",
     "start:dev": "concurrently \"nodemon server.js\" \"cd client && npm run start\"",
-    "magic":"more magic",
-    "start": "node backend/server.js",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+    "magic": "more magic",
+    
+    
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    
+    
+  }
   },
   "repository": {
     "type": "git",
@@ -25,6 +29,7 @@
   "homepage": "https://github.com/chorvick/flock#readme",
   "dependencies": {
     "concurrently": "^6.2.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "mongojs": "^3.1.0",
