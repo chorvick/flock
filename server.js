@@ -1,33 +1,19 @@
-const mongoose = require("mongoose");
-const express = require("express");
-const app = express();
+const nodemon = require('nodemon');
+const path = require('path');
 
-const morgan = require("morgan");
-const PORT = process.env.PORT || 3001;
-
-
-// Connect to the Mongo DB
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/flock";
-mongoose.connect(
-    MONGODB_URI,
-    { useNewUrlParser: true },
-    console.log("Connected to MongoDB!")
-);
-
-// Define middleware 
-app.use(morgan("dev"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-
-app.get("/test", (req, res) => {
-    res.json({ success: true })
+nodemon({
+  execMap: {
+    js: 'node'
+  },
+  script: path.join(__dirname, 'server/server'),
+  ignore: [],
+  watch: process.env.NODE_ENV !== 'production' ? ['server/*'] : false,
+  ext: 'js'
 })
-
-app.use(require("./routes"))
-
-// Start server
-app.listen(PORT, function () {
-    console.log(`Server now listening on PORT ${PORT}!`);
+.on('restart', function() {
+  console.log('Server restarted!');
+})
+.once('exit', function () {
+  console.log('Shutting down server');
+  process.exit();
 });
-
-/////    server js file runs the express server
