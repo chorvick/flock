@@ -48,7 +48,7 @@ module.exports = (app) => {
       });
     }
 
-    console.log('here');
+    console.log('user is trying to sign up ');
     email = email.toLowerCase();
     email = email.trim();
 
@@ -88,6 +88,6 @@ module.exports = (app) => {
       })
 
     })
-  
+
   })
 }
