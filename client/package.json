@@ -1,0 +1,21 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "flock",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chorvick/flock.git"
+  },
+  "author": "team ctl z",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chorvick/flock/issues"
+  },
+  "homepage": "https://github.com/chorvick/flock#readme"
+}
