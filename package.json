@@ -13,6 +13,7 @@
     "start": "webpack -p --progress --profile --colors && node server",
     "start:dev": "node server",
     "magic": "more magic",
+    "build": "cd client && npm i && npm run build",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
   },
   "engines": {
