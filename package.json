@@ -1,17 +1,19 @@
 {
-  "name": "flock-flieck",
+  "name": "flock",
   "version": "1.0.0",
   "description": "MERN stack project ",
   "author": "Ctrl Z",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flieckster/flock-flieck.git"
+    "url": "git+https://github.com/chorvick/flock.git"
   },
   "license": "MIT",
   "private": true,
   "scripts": {
     "start": "webpack -p --progress --profile --colors && node server",
-    "start:dev": "node server"
+    "start:dev": "node server", "magic":"more magic",
+    
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
   },
   "engines": {
     "node": ">=6"
