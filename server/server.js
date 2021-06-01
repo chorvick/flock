@@ -12,7 +12,7 @@ const webpackConfig = require('../webpack.config');
 
 
 const isDev = process.env.NODE_ENV !== 'production';
-const port  = process.env.PORT || 8080;
+const port = process.env.PORT || 8080;
 
 
 // Configuration
@@ -20,7 +20,7 @@ const port  = process.env.PORT || 8080;
 
 // Set up Mongoose
 // mongoose.connect(isDev ? config.db_dev : config.db);
-mongoose.connect( config.db_dev);
+mongoose.connect(config.db_dev);
 mongoose.Promise = global.Promise;
 
 
@@ -73,5 +73,10 @@ app.listen(port, 'localhost', (err) => {
 
   console.info('>>> 🌎 Open http://localhost:%s/ in your browser.', port);
 });
-
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/flock";
+mongoose.connect(
+  MONGODB_URI,
+  { useNewUrlParser: true },
+  console.log("Connected to MongoDB!")
+);
 module.exports = app;
