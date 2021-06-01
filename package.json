@@ -1,11 +1,11 @@
 {
-  "name": "flock-flieck",
+  "name": "flock",
   "version": "1.0.0",
   "description": "MERN stack project ",
   "author": "Ctrl Z",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flieckster/flock-flieck.git"
+    "url": "git+https://github.com/chorvick/flock"
   },
   "license": "MIT",
   "private": true,
