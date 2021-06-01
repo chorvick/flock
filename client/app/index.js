@@ -13,6 +13,7 @@ import NotFound from './components/App/NotFound';
 import Home from './components/Home/Home';
 import Signin from './components/Home/Signin';
 import Signup from './components/Home/Signup';
+import Event from './components/Home/Event';
 
 import HelloWorld from './components/HelloWorld/HelloWorld';
 
@@ -27,6 +28,7 @@ render((
         <Route path="/signin" component={Signin}/>
         <Route path="/signup" component={Signup}/>
         <Route path="/helloworld" component={HelloWorld}/>
+        <Route path="/event" component={Event}/>
         <Route component={NotFound}/>
       </Switch>
     </App>
