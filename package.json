@@ -17,8 +17,8 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
   },
   "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
+    "node": "14.0.0",
+    "npm": "7.14.0"
   },
   "dependencies": {
     "Babel": "0.0.1",
