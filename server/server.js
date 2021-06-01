@@ -45,7 +45,7 @@ if (isDev) {
 
   app.use(webpackDevMiddleware(compiler, {
     publicPath: webpackConfig.output.publicPath,
-    contentBase: path.resolve(__dirname, '../client/public'),
+    contentBase: path.resolve(__dirname, '../client/build'),
     stats: {
       colors: true,
       hash: false,
@@ -66,17 +66,20 @@ if (isDev) {
   });
 }
 
-app.listen(port, 'localhost', (err) => {
-  if (err) {
-    console.log(err);
-  }
 
-  console.info('>>> 🌎 Open http://localhost:%s/ in your browser.', port);
-});
+
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/flock";
 mongoose.connect(
   MONGODB_URI,
   { useNewUrlParser: true },
-  console.log("Connected to MongoDB!")
-);
+  () => {
+    console.log("Connected to MongoDB!")
+    app.listen(port, 'localhost', (err) => {
+      if (err) {
+        console.log(err);
+      }
+
+      console.info('>>> 🌎 Open http://localhost:%s/ in your browser.', port);
+    });
+  });
 module.exports = app;
