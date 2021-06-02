@@ -30,6 +30,9 @@ function Header() {
                 <li>
                   <Link to="/AboutPage">ABOUT</Link>
                 </li>
+                <li>
+                  <Link to="/Logout">LOG OUT</Link>
+                </li>
               </ul>
             </div>
           </nav>
