@@ -15,8 +15,8 @@ module.exports = (app) => {
       organizer,
       organizerId,
       attendees
-    }  = body;
-   
+    } = body;
+
 
     // if (!name) {
     //   return res.send({
@@ -58,27 +58,27 @@ module.exports = (app) => {
 
 
 
-      const newEvent = new Event();
-      newEvent.name = name;
-      newEvent.address = address;
-      newEvent.date = date;
-      newEvent.time = time;
-      newEvent.description = description;
-      newEvent.organizer = organizer;
-      newEvent.save((err, user) => {
-        if (err) {
-          return res.send({
-            success: false,
-            message: 'Error: Server Error'
-          });
-        }
+    const newEvent = new Event();
+    newEvent.name = name;
+    newEvent.address = address;
+    newEvent.date = date;
+    newEvent.time = time;
+    newEvent.description = description;
+    newEvent.organizer = organizer;
+    newEvent.save((err, user) => {
+      if (err) {
         return res.send({
-          success: true,
-          message: 'Congrats! your event was saved!'
+          success: false,
+          message: 'Error: Server Error'
         });
-      })
-
+      }
+      return res.send({
+        success: true,
+        message: 'Congrats! your event was saved!'
+      });
     })
 
-  
+  })
+
+
 }
