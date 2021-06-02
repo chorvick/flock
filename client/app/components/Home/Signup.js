@@ -66,9 +66,9 @@ class Signup extends Component {
         signUpEmail,
         signUpPassword,
       } = this.state;
-      this.setState({
-        isLoading: true,
-      });
+      // this.setState({
+      //   isLoading: true,
+      // });
       // Post request to backend
       fetch('/api/account/signup', {
         method: 'POST',

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 
-// import {
-//   setInStorage,
-//   getFromStorage,
-// } from '../../utils/storage';
+import {
+  setInStorage,
+  getFromStorage,
+} from '../../utils/storage';
 
 class Event extends Component {
   constructor(props) {

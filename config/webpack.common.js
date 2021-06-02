@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+
 const helpers = require('./helpers');
 
 const NODE_ENV = process.env.NODE_ENV;
@@ -36,7 +37,6 @@ module.exports = {
         include: helpers.root('client'),
         loader: 'babel-loader'
       },
-
       // SCSS files
       {
         test: /\.scss$/,

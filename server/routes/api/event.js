@@ -64,7 +64,8 @@ module.exports = (app) => {
       newEvent.date = date;
       newEvent.time = time;
       newEvent.description = description;
-      newEvent.organizer = organizer;
+      newEvent.organizer = organizerId;
+      newEvent.attendees = attendees;
       newEvent.save((err, user) => {
         if (err) {
           return res.send({
