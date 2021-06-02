@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-// import MainImage from "../../../public/assets/img/main.jpg";
+import React from 'react';
+import MainImage from "../../img/main.png";
 import 'whatwg-fetch';
 
 
 
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome!</h1>
+    <div className="container center-align">
+      <img src={MainImage} alt="torchlight in the sky" />
     </div>
   )
 }
