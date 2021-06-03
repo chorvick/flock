@@ -28,6 +28,9 @@ function Header() {
                   <Link to="/signin">LOG IN</Link>
                 </li>
                 <li>
+                  <Link to="/EventD">EVENTS</Link>
+                </li>
+                <li>
                   <Link to="/AboutPage">ABOUT</Link>
                 </li>
                 <li>

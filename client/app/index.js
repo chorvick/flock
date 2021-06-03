@@ -11,6 +11,9 @@ import Signup from "./components/Home/Signup";
 import Event from "./components/Home/Event";
 import Logout from "./components/Home/Logout";
 import AboutPage from "./components/AboutPage/AboutPage";
+import EventD from "./components/Home/EventD";
+
+
 //import "./components/AboutPage/about.css";
 import HelloWorld from "./components/HelloWorld/HelloWorld";
 
@@ -28,7 +31,7 @@ render(
         <Route path="/event" component={Event} />
         <Route path="/AboutPage" component={AboutPage} />
         <Route path="/logout" component={Logout} />
-
+        <Route path="/EventD" component={EventD} />
         <Route component={NotFound} />
       </Switch>
     </App>
