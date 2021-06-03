@@ -5,7 +5,7 @@ import cliff from "../../img/images/Cliff.jpg";
 import brian from "../../img/images/Brian.jpg";
 import $ from "jquery";
 import "whatwg-fetch";
-//import css from "./about";
+import style from "./about.css";
 
 function showShannonAbout() {
   $("#ShannonAbout").removeClass("hide");
@@ -106,10 +106,10 @@ const AboutPage = () => {
     <div>
       <div className="container center-align">
         <div className="center-align team-pics">
-          <button class="hide btn" id="meetTeamBtn" onClick={GangsAllHere}>
+          <button className="hide btn" id="meetTeamBtn" onClick={GangsAllHere}>
             BACK
           </button>
-          <h1>ABOUT</h1>
+          <h1 className={style.headline}>ABOUT</h1>
           <div className="row">
             <div className="col s4" id="ShannonPic" onClick={showShannonAbout}>
               <input

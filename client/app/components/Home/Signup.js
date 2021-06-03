@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { useHistory } from "react-router-dom";
 import 'whatwg-fetch';
 
 import {
@@ -11,6 +12,7 @@ class Signup extends Component {
     super(props);
 
     this.state = {
+      redirect: '',
       isLoading: true,
       token: '',
       signUpFirstName: '',
