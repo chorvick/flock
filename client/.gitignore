@@ -6,9 +6,9 @@
 .pnp.js
 node_modules/.cache
 node_modules
-# testing
-/coverage
 
+/coverage
+/node_modules/
 # production
 /build
 
