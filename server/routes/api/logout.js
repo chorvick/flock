@@ -1,5 +1,5 @@
 const UserSession = require("../../models/UserSession");
-const User = require("../../models/User");
+
 
 module.exports = (app) => {
 
@@ -14,7 +14,7 @@ module.exports = (app) => {
       isDeleted: false
     }, {
       $set: {
-        isDeleted:true
+        isDeleted: true
       }
     }, null, (err, sessions) => {
       if (err) {
@@ -28,6 +28,7 @@ module.exports = (app) => {
         success: true,
         message: 'Good'
       });
+      
     });
   });
 

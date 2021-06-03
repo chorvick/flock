@@ -7,6 +7,9 @@ import $ from "jquery";
 import "whatwg-fetch";
 import style from "./about.css";
 
+
+
+
 function showShannonAbout() {
   $("#ShannonAbout").removeClass("hide");
   $("#Brian").addClass("hide");
@@ -109,7 +112,7 @@ const AboutPage = () => {
           <button className="hide btn" id="meetTeamBtn" onClick={GangsAllHere}>
             BACK
           </button>
-          <h1 className={style.headline}>ABOUT</h1>
+          <h1>ABOUT</h1>
           <div className="row">
             <div className="col s4" id="ShannonPic" onClick={showShannonAbout}>
               <input

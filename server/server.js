@@ -77,6 +77,7 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/flock";
 mongoose.connect(
   MONGODB_URI,
   { useNewUrlParser: true },
+  { useFindAndModify: false },
   console.log("Connected to MongoDB!")
 );
 module.exports = app;
