@@ -38,6 +38,7 @@ class Signin extends Component {
               token,
               isLoading: false
             });
+            this.props.history.push("/event")
           } else {
             this.setState({
               isLoading: false,
@@ -63,6 +64,9 @@ class Signin extends Component {
       });
     }
   
+    afterSignin(){
+      
+    }
 
     onSignIn() {
       // Grab state
@@ -87,7 +91,7 @@ class Signin extends Component {
         .then(json => {
           console.log('json', json);
           if (json.success) {
-            setInStorage('the_main_app', { token: json.token });
+            setInStorage('flock', { token: json.token });
             this.setState({
               signInError: json.message,
               isLoading: false,
@@ -95,6 +99,7 @@ class Signin extends Component {
               signInUsername: '',
               token: json.token,
             });
+            this.props.history.push("/event");
           } else {
             this.setState({
               signInError: json.message,
@@ -106,6 +111,7 @@ class Signin extends Component {
 
 
     render() {
+      // console.log(this.props);
       const {
         isLoading,
         token,
@@ -118,7 +124,6 @@ class Signin extends Component {
       }
       if (!token) {
         return (
-        
             <div className="container center-align">
               <div className="row left-align">
               <h4>Missed You!</h4>
@@ -147,6 +152,13 @@ class Signin extends Component {
             </div>
             </div>
           )
+         }
+
+         if (token){
+           return(
+<h1>got it</h1>
+           );
+
          }
 
     }

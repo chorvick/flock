@@ -39,13 +39,13 @@ var EventSchema = new Schema({
     //// to reference
     organizerId: {
         type: Schema.Types.ObjectId,
-        ref: "Users",
+        ref: "users",
         required: false,
     },
     //// those attending the outing
     attendees: [{
         type: Schema.Types.ObjectId,
-        ref: "Users",
+        ref: "users",
     }]
 
 });

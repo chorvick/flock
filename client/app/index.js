@@ -24,9 +24,11 @@ render(
         <Route exact path="/" component={Home} />
         <Route path="/signin" component={Signin} />
         <Route path="/signup" component={Signup} />
+        {/* <Route path="/helloworld" component={HelloWorld}/> */}
         <Route path="/event" component={Event} />
         <Route path="/AboutPage" component={AboutPage} />
         <Route path="/logout" component={Logout} />
+
         <Route component={NotFound} />
       </Switch>
     </App>

@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+
+
 const helpers = require('./helpers');
 
 const NODE_ENV = process.env.NODE_ENV;
@@ -30,16 +32,23 @@ module.exports = {
 
   module: {
     rules: [
+      {
+        test: /\.(jpg|gif|png)?$/,
+        loader: 'file-loader',
+        options: {
+          name:'dirname/[contenthash].[ext]',
+        },
+      },
+
       // JS files
       {
         test: /\.jsx?$/,
         include: helpers.root('client'),
         loader: 'babel-loader'
       },
-
       // SCSS files
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
