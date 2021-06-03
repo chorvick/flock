@@ -7,7 +7,7 @@
 node_modules
 # testing
 /coverage
-
+./client/node_modules
 # production
 /build
 
