@@ -2,7 +2,7 @@
   "name": "flock",
   "version": "1.0.0",
   "description": "MERN stack project ",
-  "proxy": "https://localhost:8000",
+  "proxy": "https://localhost:8080",
   "author": "Ctrl Z",
   "repository": {
     "type": "git",
