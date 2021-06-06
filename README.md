@@ -6,6 +6,13 @@
 
 You find an event you want to go to, but you have too many friends! It must be exhausting trying to figure out who can come, who can’t, location, and all that nonsense. It would’ve been nice if there was something that helped you manage your events better. Look no further, introducing FLOCK!! Use flock to schedule an event and share it with all your friends. All details are included so no need to individually tell everyone about all the nitty gritty information.
 
+## Screenshots
+![Screenshot 2021-06-06 at 18-21-26 Flock](https://user-images.githubusercontent.com/52890172/120942962-0c92c100-c6fa-11eb-9f5a-df0224cdb324.png)
+![Screenshot 2021-06-06 at 18-21-56 Flock](https://user-images.githubusercontent.com/52890172/120942961-0b619400-c6fa-11eb-868f-ee453e107cb2.png)
+![Screenshot 2021-06-06 at 18-22-14 Flock](https://user-images.githubusercontent.com/52890172/120942958-0a306700-c6fa-11eb-9ab6-87bb7716b4cc.png)
+
+
+
 ## Table of Contents
 
 [Description](#description)
