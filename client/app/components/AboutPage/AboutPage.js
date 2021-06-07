@@ -180,7 +180,7 @@ const AboutPage = () => {
             </p>
             <p></p>
             <p className="col hide" id="CliffAbout">
-              Cliff is a great guy, a great coder and afraid of picture frames.
+              Cliff is a great guy, a great coder and hates to do things at the last minute.
             </p>
             <p></p>
             <p className="col hide" id="MohammadAbout">
