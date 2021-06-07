@@ -1,52 +1,18 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
 
-
-export default class Events extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = { usersCollection: [] };
-    }
-
-    componentDidMount() {
-        axios.get('http://localhost:8000/events')
-            .then(res => {
-                this.setState({ Event: res.data });
-            })
-            .catch(function (error) {
-                console.log(error);
-            })
-    }
-
-    dataTable() {
-        return this.state.eventCollection.map((data, i) => {
-            return <DataTable obj={data} key={i} />;
-        });
-    }
-
-    render() {
-        return (
-            <div className="wrapper-users">
-                <div className="container">
-                    <table className="table table-striped table-dark">
-                        <thead className="thead-dark">
-                            <tr>
-                                <td>name</td>
-                                <td>address</td>
-                                <td>date</td>
-                                <td>date</td>
-                                <td>time</td>
-                                <td>description</td>
-                                <td>attendees</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {this.dataTable()}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        )
-    }
+export const EventCard = (props) => {
+    return <div className="wrapper-users">
+        <div className="container">
+            <table className="table table-striped table-dark">
+                <thead className="thead-dark">
+                    <tr>
+                        {Object.keys(props).filter(prop => !["_id", "__v"].includes(prop)).map((prop, index) => <div><th key={index}>{prop}</th><tr>{props[prop]}</tr></div>)}
+                    </tr>
+                </thead>
+                <tbody>
+                    <p>{JSON.stringify(props)}</p>
+                </tbody>
+            </table>
+        </div>
+    </div>
 }
