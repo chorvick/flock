@@ -10,7 +10,7 @@ export const EventCard = (props) => {
                     </tr>
                 </thead>
                 <tbody>
-                    <p>{JSON.stringify(props)}</p>
+                    {/* <p>{JSON.stringify(props)}</p> */}
                 </tbody>
             </table>
         </div>
